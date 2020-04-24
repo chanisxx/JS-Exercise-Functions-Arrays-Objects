@@ -169,14 +169,15 @@ function appleIndex(loop) {
  * passing in [ 'orange', 'apple', 'banana', 'apples', 'apple', 'mango' ] as the argument,
  * the returned value should be: [ false, true, false, false, true, false ].
 */
+
 function isItAnApple(boolean) { 
   const array = [];
   for(var i=0 ; i<boolean.length; i++){
     if (boolean[i] === 'apple'){
-      return 'true';
+      array.push(true);
     }
     else if(boolean[i] != 'apple'){
-      return 'false';
+      array.push(false);
     }
   }
   return array
